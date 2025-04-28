@@ -1,8 +1,12 @@
+import java.time.LocalTime;
 public class Task {
+    public enum Status {
+        Done, InProgress, Pending;
+    }
     private int id;
     private String name;
     private String description;
-    private int status; // 1- incomplete, 2- in-progress, 3- completed
+    private Status status;
     private String createdAt;
     private String updatedAt;
 
@@ -10,7 +14,7 @@ public class Task {
        this.id = id;
        this.name = name;
        this.description = description;
-       this.status = 1;
+       this.status = Status.Pending ;
        this.createdAt = createdAt;
        this.updatedAt = updatedAt;
     }
