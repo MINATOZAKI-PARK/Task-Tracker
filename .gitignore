@@ -35,3 +35,4 @@ Task.Tracker.iml
 /out/
 /target/
 /*.class
+.src
